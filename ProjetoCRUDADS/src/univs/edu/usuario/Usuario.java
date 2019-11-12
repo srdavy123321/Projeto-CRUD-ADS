@@ -46,7 +46,9 @@ public class Usuario {
         this.login = login;
     }
 
-    public String getSenha() {
+    public String getSenha() {                                                                                                                                                                                                 
+        
+       
         return senha;
     }
 
