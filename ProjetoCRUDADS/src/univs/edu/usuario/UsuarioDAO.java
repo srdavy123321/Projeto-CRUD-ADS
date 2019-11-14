@@ -1,6 +1,7 @@
 package univs.edu.usuario;
 
 import java.util.List;
+import javax.swing.JOptionPane;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
@@ -19,10 +20,10 @@ public class UsuarioDAO {
         sessao.save(usuario);
         transacao.commit();
         if(usuario.getIdUsuario() == 0){
-            
+             JOptionPane.showMessageDialog(null, "Usuário Cadastrado!");
         }else{
             sessao.update(usuario);
-            
+            JOptionPane.showMessageDialog(null, "Usuário Editado!");
         }
         sessao.close();
     }
