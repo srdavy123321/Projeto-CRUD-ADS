@@ -5,9 +5,11 @@
         <group>
             <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/usuario/UsuarioDAO.java</file>
             <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/telas/ConsultaUsuario.java</file>
-            <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/hibernate.cfg.xml</file>
             <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/usuario/UsuarioTableModel.java</file>
+            <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/usuario/Usuario.java</file>
             <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/telas/TelaUsuario.java</file>
+            <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/telas/TelaAutenticacao.java</file>
+            <file>file:/C:/Users/LABORATORIO%2001/Desktop/Projeto-CRUD-ADS/ProjetoCRUD/src/univs/edu/telas/MenuPrincipal.java</file>
         </group>
     </open-files>
 </project-private>

@@ -28,11 +28,19 @@ public class TelaUsuario extends javax.swing.JFrame {
         tfLogin.setText("");
         tfSenha.setText("");
     }
+    public void carregarUsuario(Usuario usuario){
+    tfNome.setText(usuario.getNomeUsuario());
+    tfLogin.setText(usuario.getLogin());
+    tfSenha.setText(usuario.getSenha());
+    this.usuario = usuario;
+    
+}
 
     public void atualizarCampos(){
         tfLogin.setText(usuario.getLogin());
         tfSenha.setText(usuario.getSenha());
         tfNome.setText(usuario.getNomeUsuario());
+        this.usuario = usuario;
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -204,7 +212,8 @@ public class TelaUsuario extends javax.swing.JFrame {
         usuario.setSenha(tfSenha.getText());
         usuario.setLogin(tfLogin.getText());
         if(usuario.getIdUsuario() != 0){
-        dao.editarUsuario(usuario);    
+        dao.editarUsuario(usuario);  
+        limparCampos();
         }else{
         dao.salvar(usuario);
         limparCampos();

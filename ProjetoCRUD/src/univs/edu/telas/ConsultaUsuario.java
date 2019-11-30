@@ -127,16 +127,17 @@ public class ConsultaUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        int linha = tabelaUsuario.getSelectedColumn();
+        int linha = tabelaUsuario.getSelectedRow();
         if(linha == -1){
             JOptionPane.showMessageDialog(null, "Selecione uma linha!");
         }else{
             usuario = dao.pesquisar((int)tabelaUsuario.getValueAt(linha, 0));
         TelaUsuario cadastro = new TelaUsuario();
+        cadastro.carregarUsuario(usuario);
         cadastro.usuario = usuario;
         cadastro.atualizarCampos();
         cadastro.setVisible(true);
-            
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
     }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
